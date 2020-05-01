@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoDB = `mongodb://${process.env.MONGO_HOST}/cryptoboard-back`;
+const mongoDB = `mongodb://${process.env.MONGO_HOST}/${process.env.MONGO_DB_NAME}`;
 
 mongoose.connection.on(
   'error',
